@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+	<title>Weather App</title>
+	<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="card">
+	<div class="search">
+		<label>
+			<input
+				id="searchInput"
+				placeholder="Введите название города"
+				spellcheck="false"
+				type="text"
+			/>
+		</label>
+		<button id="searchBtn">
+			<img alt="/" src="images/search.png"/>
+		</button>
+	</div>
+	<div class="error" style="display: none">
+		<p>Неправильный ввод</p>
+	</div>
+	<div class="weather" style="display: none">
+		<img alt="/" class="weather-icon" src=""/>
+		<h1 class="temp">22°c</h1>
+		<h2 class="city">Абакан</h2>
+		<div class="details">
+			<div class="col">
+				<img alt="/" src="images/humidity.png"/>
+				<div>
+					<p class="humidity">50%</p>
+					<p>Влажность</p>
+				</div>
+			</div>
+			<div class="col">
+				<img alt="/" src="images/wind.png"/>
+				<div>
+					<p class="wind">15 км/ч</p>
+					<p>Скорость ветра</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
